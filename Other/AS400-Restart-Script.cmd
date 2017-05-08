@@ -1,0 +1,1 @@
+rmtcmd "PWRDWNSYS OPTION(*IMMED) RESTART(*YES)" /system:dealer.powerfarming.co.nz /user:qsecofr /password:thebrave /Z

@@ -1,0 +1,20 @@
+<job>
+   <script src="\\powerfarming.co.nz\netlogon\svn-netlogon\Login\baselogin.vbs" language="vbscript" />
+   <script src="\\powerfarming.co.nz\netlogon\svn-netlogon\Login\PartsCatAppLogin.vbs" language="vbscript" />
+   <script language="vbscript">
+	
+	Public objWshShell		'WSH Shell
+	Public objFSO			'WSH FileSystemObject
+	Public objNET			'WSH Networking Object
+	
+    'Load Intrinsic Objects
+    Set objWshShell = Wscript.CreateObject("Wscript.Shell")
+    Set objFSO = Wscript.CreateObject("Scripting.FileSystemObject")
+    Set objNet = Wscript.CreateObject("Wscript.Network")	
+	
+	Call GetUserName
+	Wscript.Echo strUserName
+	Call PartsCat_SetupLocalResources
+
+   </script>
+</job>

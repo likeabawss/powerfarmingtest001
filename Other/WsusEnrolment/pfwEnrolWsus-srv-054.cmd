@@ -1,0 +1,1 @@
+runas /noprofile /user:power\administrator /savecred "wscript.exe \\powerfarming.co.nz\NETLOGON\svn-netlogon\Other\WsusEnrolment\pfwEnrolWsus-srv-054.vbs"

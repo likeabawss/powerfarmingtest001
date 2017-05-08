@@ -1,0 +1,11 @@
+<job>
+<script language="vbscript">
+           sql="execute [dbo].[cForm-WindowsEventLogPrintJobResults-ProcesCacheTable]"
+	   'on error resume next
+           Set cnx = CreateObject("ADODB.Connection")
+	   cnx.open = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=CreateFormLogging;Data Source=pfnz-srv-029.powerfarming.co.nz"
+	   cnx.CommandTimeout = 0
+	   cnx.execute (sql)
+           cnx.Close
+   </script>
+</job>

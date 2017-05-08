@@ -1,0 +1,9 @@
+<job>
+   <script src="\\powerfarming.co.nz\netlogon\svn-netlogon\Login\BaseLogin.vbs" language="vbscript" />
+   <script src="\\powerfarming.co.nz\netlogon\svn-netlogon\Login\PartsCatAppLogin.vbs" language="vbscript" />
+   <script language="vbscript">
+
+		Call PartsCatMain
+
+   </script>
+</job>

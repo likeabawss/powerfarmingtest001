@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableDiffCheck>
+	<Conf
+			ExportFolder="C:\Support\TableDiffCheck"
+			TableDiffExecutablePath="\\pfnz-srv-019\c$\program files\microsoft sql server\100\com\tablediff.exe"
+			logSQLServer="PFNZ-SRV-040"
+			logSQLDatabase="PFWITMGMT"
+			logSQLTable="TableDiffReplicationCheckResults"
+			>
+	</Conf>
+	<Checks>
+		<CheckTable
+			SourceTable="Address"
+			SourceServer="PFNZ-SRV-019\PFWAX"
+			SourceDatabase="PFW_AX2009_LIVE"
+			SourceSchema="dbo"
+			DestinationTable="Address"
+			DestinationServer="PFNZ-SRV-019\PFWAX"
+			DestinationDatabase="PFGAXConnect_Live"
+			DestinationSchema="dbo"
+			TextFilterInCSV="'pfg'"
+			Enabled="Y">			
+		</CheckTable>
+		<CheckTable
+			SourceTable="AMDEVICEBRAND"
+			SourceServer="PFNZ-SRV-019\PFWAX"
+			SourceDatabase="PFW_AX2009_LIVE"
+			SourceSchema="dbo"
+			DestinationTable="AMDEVICEBRAND"
+			DestinationServer="PFNZ-SRV-019\PFWAX"
+			DestinationDatabase="PFGAXConnect_Live"
+			DestinationSchema="dbo"
+			TextFilterInCSV="'pfg'"
+			Enabled="N">			
+		</CheckTable>
+		<CheckTable
+			SourceTable="InventSum"
+			SourceServer="PFNZ-SRV-019\PFWAX"
+			SourceDatabase="PFW_AX2009_LIVE"
+			SourceSchema="dbo"
+			DestinationTable="InventSum"
+			DestinationServer="PFNZ-SRV-019\PFWAX"
+			DestinationDatabase="PFGAXConnect_Live"
+			DestinationSchema="dbo"
+			TextFilterInCSV="'pfw','pfg'"
+			Enabled="N">			
+		</CheckTable>
+	</Checks>
+</TableDiffCheck>

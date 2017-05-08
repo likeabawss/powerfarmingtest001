@@ -1,0 +1,8 @@
+<job>
+   <script src="\\powerfarming.co.nz\netlogon\svn-netlogon\Login\BaseLogin.vbs" language="vbscript" />
+   <script language="vbscript">
+
+		Call Main
+
+   </script>
+</job>

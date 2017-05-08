@@ -1,0 +1,11 @@
+<job>
+<script language="vbscript">
+           sql="execute Main.dbo.[SYS - Table Builder]"
+	   'on error resume next
+           Set cnx = CreateObject("ADODB.Connection")
+	   cnx.open = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=Main;Data Source=pfgsrv-06"
+	   cnx.CommandTimeout = 0
+	   cnx.execute (sql)
+           cnx.Close
+   </script>
+</job>

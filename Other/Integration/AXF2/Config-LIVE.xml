@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sr9869-Config>
+	<AXDB>
+		<DataSource>PFNZ-SRV-019\PFWAX</DataSource>
+		<InitialCatalogue>PFW_AX2009_LIVE</InitialCatalogue>
+		<AX-DataAreaId>pfw</AX-DataAreaId>
+	</AXDB>
+</sr9869-Config>

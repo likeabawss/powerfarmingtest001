@@ -1,0 +1,2 @@
+LogParser "SELECT EventLog, RecordNumber, TimeGenerated, EventID, EventType, EventTypeName, EventCategory, SourceName, ComputerName, Message FROM System, Application, 'DNS Server', 'File Replication Service', 'Directory Service', 'DFS Replication' TO EventsTesting Where (EventType <> 4 OR EventID = 6009 OR EventID = 6013)" -o:SQL -server:PFNZ-SRV-029 -driver:"SQL Server" -database:itlogcollector -username:logcollector -password:dnaltocs -createtable:ON -iCheckpoint:c:\temp\evt_checkpoint.lpc
+
